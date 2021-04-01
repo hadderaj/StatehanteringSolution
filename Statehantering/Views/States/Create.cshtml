@@ -1,0 +1,21 @@
+﻿@model StateCreateVM
+
+
+<form method="post">
+
+    <label asp-for="CompanyName"></label>
+    <input asp-for="CompanyName" />
+    <span asp-validation-for="CompanyName"></span>
+
+    <label asp-for="Email"></label>
+    <input asp-for="Email" />
+    <span asp-validation-for="Email"></span>
+    <br />
+    <input type="Submit" value="Create" />
+
+</form>
+@section scripts
+    {
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.2/jquery.validate.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/mvc/5.2.3/jquery.validate.unobtrusive.min.js"></script>
+}
